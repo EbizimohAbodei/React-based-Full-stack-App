@@ -1,13 +1,129 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+body {
+  background-color: rgba(245, 245, 245, 0.872);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  display: flex;
+  background-color: #509cb5;
+  height: auto;
+  align-items: center;
+  padding: 0.3rem;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+}
+
+header h1 {
+  margin: 1rem;
+  font-size: 3rem;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 1rem 0.2rem;
+  font-size: 1.4rem;
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.createContainer {
+  text-align: center;
+}
+
+.title,
+.labelInput {
+  margin: 0.5rem 0;
+}
+
+.saveButton {
+  padding: 0.3rem;
+  width: 5rem;
+  background-color: #1e90ff;
+  border-radius: 0.5rem;
+}
+
+.saveButton:hover {
+  cursor: pointer;
+  background-color: #053e77;
+}
+
+.usersContainer {
+  text-align: center;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.3em 0.2em 0.3em 0;
+}
+
+th:last-child {
+  padding: 0;
+}
+
+tr:nth-child(2) td {
+  padding-top: 0.6em;
+}
+tr:nth-child(even) {
+  background-color: #d5c9c9;
+}
+
+.dataRow:hover {
+  background-color: #978d8d;
+}
+
+th {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border-bottom: 1px solid #6f7381;
+  font-weight: normal;
+  color: #6f7075;
+}
+
+td {
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #509cb5;
+  height: 3rem;
+  align-items: center;
+  padding: 0.3rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  header h1 {
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
